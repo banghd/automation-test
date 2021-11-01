@@ -20,7 +20,7 @@ ${CONTENT_TYPE}         application/json
 #PRODUCTS
 ${LIMIT}                4
 *** Test Cases ***
-LOGIN                  ---
+#LOGIN                  ---
 Login without information
     [Tags]  Auth
     Login without infomation
@@ -32,7 +32,9 @@ Login with only username
 Login with only password
     [Tags]   Auth
     Login with only password
-
+Login with wrong password
+    [Tags]  Auth
+    Login with wrong password
 Login with right credentials
     [Tags]     Auth
     Login with right credentials
@@ -85,7 +87,14 @@ Login with only password
     ${response}=        Post Request     ping        uri=/user/login    data={"password":"${PASSWORD}"}     headers=${HEADERS}
     Should Be Equal As Strings      ${response.status_code}     400
     log to console      ${response.json()}
-
+Login with wrong password
+     ${HEADERS}=         Create Dictionary
+    ...                 Content-Type=${CONTENT_TYPE}
+    ...                 User-Agent=RobotFramework
+    Create Session      ping        ${BASE_URL}     verify=True
+    ${response}=        Post Request     ping        uri=/user/login    data={"password":"${PASSWORD}", "password":"abcscs"}     headers=${HEADERS}
+    Should Be Equal As Strings      ${response.status_code}     400
+    log to console      ${response.json()}
 Login with right credentials
    ${HEADERS}=         Create Dictionary
     ...                 Content-Type=${CONTENT_TYPE}
