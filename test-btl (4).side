@@ -1,0 +1,2121 @@
+{
+  "id": "4be341da-3911-4eb9-bc89-c7b2bc3912b9",
+  "version": "2.0",
+  "name": "test btl",
+  "url": "https://devat-ecommerce.herokuapp.com/",
+  "tests": [{
+    "id": "8e8f496e-1c70-4236-a9d6-29866a95ca49",
+    "name": "Register invalid password",
+    "commands": [{
+      "id": "1eb61286-f7a7-4aa4-84a8-0be73ce75c30",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80c10e82-2270-418a-988c-910f3a549687",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8331d023-05e0-45ce-b75a-44189757bb3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login ✥ Register')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0856dc76-9ad6-4e7e-9ae0-0ed81dc47cbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > a",
+      "targets": [
+        ["css=.row > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Register')])[2]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/form/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2360b88b-c21c-43d1-b077-c8dbc38a8a0f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row > a",
+      "targets": [
+        ["css=.row > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Register')])[2]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/form/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a40de9-f6ae-4161-9faa-68a233b8f331",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b6cbf2a-0902-4f61-8779-19a10686ce32",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vinh1"
+    }, {
+      "id": "f96b1753-706a-4e72-bc09-9162035b14f0",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "vinhabcef@gmail.com"
+    }, {
+      "id": "8b2591db-0149-4263-b6f0-748e4e98e8a5",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "90aaebba-0a37-49a5-b165-656c2b429a88",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2832b9e0-1e17-4cf0-913a-424ff9df9007",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Password is at least 6 characters long.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "df744d79-aecf-4d1f-a58f-f1781bad67be",
+    "name": "Register valid",
+    "commands": [{
+      "id": "9f6c8b5a-7df3-4557-b0f8-9b380ff141ed",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7e350fd-67b0-42e2-99a1-7d460b298a41",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3fd844c-329c-4575-9848-686260bc9029",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login ✥ Register')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c6cada-8b0d-46e4-80b7-8074307baf05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > a",
+      "targets": [
+        ["css=.row > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Register')])[2]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/form/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f2b893-49ea-4cd9-ad25-74851c88974a",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ba24a76-c28a-4da2-ba20-5127e1f45e58",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vinh1"
+    }, {
+      "id": "c5a44d0d-5625-4d7d-a559-3a42378a4d54",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "517f200d-df9f-4b43-9dc0-e6728ba6495a",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "vinhabc@gmail.com"
+    }, {
+      "id": "4f6aa39c-765c-4733-8c1f-4c9d818196b2",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d974669-62e6-4130-a50e-1564ae3c97e0",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "feda6fd1-9d0e-4c46-8d8d-2d57ef494057",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9c87ddc9-f790-4d2c-85d9-02b58d210f25",
+    "name": "Register invalid email",
+    "commands": [{
+      "id": "c5204905-b4a3-498e-81a3-9f9aae7d3f9b",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "403e2503-7974-4948-82b9-48590f800744",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c889ddda-fefc-4f96-9964-e12e2e1c47aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login ✥ Register')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb517492-afcb-4f66-9186-9e02daaa83d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row > a",
+      "targets": [
+        ["css=.row > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Register')])[2]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/form/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df50900b-2cd0-4ab2-b1b3-cef54eafcc4c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.row > a",
+      "targets": [
+        ["css=.row > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Register')])[2]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/form/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce98d365-5bbd-4cef-85aa-b6dcbf9bd721",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c60b86ab-0a9d-45c0-8b35-8db3ea2dcfd8",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vinh1"
+    }, {
+      "id": "4beb9b0c-3797-4019-881b-f1dfa1d71aea",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "vinhabc@gmail.com"
+    }, {
+      "id": "d68587f1-fab1-45a2-bcd7-1c96d007f06a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "10832447-cd55-4cff-97e3-72876c7fdbc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a5b71c1-0c0b-43b8-a72e-9982e7bb950f",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "The email already exists.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c809569d-2004-4933-a29b-67a3e91482aa",
+    "name": "Login valid",
+    "commands": [{
+      "id": "f6103d8b-c0e8-4bc8-b6e5-c2553cf1ee0c",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a651baba-553f-4355-a727-1a37491e497f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a463d20b-d586-4c8d-ae61-74ea08a3ad4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login ✥ Register')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fdb2c86-3e33-40f1-8552-7e0e013f9ad7",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "709a23f4-b10d-485e-912d-7e49c3a68952",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45df1d0a-5fd3-4713-995b-4bf9dab864fc",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "vinhabc@gmail.com"
+    }, {
+      "id": "47101bc9-adee-4dfb-a8f6-09682df7322c",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86660e77-fde9-41a1-bf4e-0602a858371a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "8a91ef97-eca4-4d03-a429-f1f962a61e87",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2931405b-184a-4213-8acd-cbaaa3d754be",
+    "name": "Login invalid email",
+    "commands": [{
+      "id": "46278e1d-3484-4fa5-bc47-9e8c319097f1",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64e2bba4-9bdb-4b25-8783-814c915cbc49",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42152bb7-dfdd-4443-a8ec-4814228cc824",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login ✥ Register')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c25dd1c-46c0-48d6-8749-de22d1c0ff62",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9d0ade4-09b0-4786-93e3-ece62412e280",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "vinh123@gmail.com"
+    }, {
+      "id": "002db385-8b57-4df2-a6de-26a97649416b",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "5fa29f7e-f24d-4203-869a-376aa2cf1ee2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "728e4cad-648d-4d40-8570-97a35830631f",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "User does not exist.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "027c213c-9a22-458a-89fd-6e837792b5c2",
+    "name": "Login invaid password",
+    "commands": [{
+      "id": "e06f918f-a819-44e2-8eec-6421bcb33cf1",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b3c1398-ea7b-490c-995a-bba0565884ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d70e50c-31bf-4472-9d5a-9d1334824616",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login ✥ Register')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a3dd26e-091c-4bdb-875a-b02901800e61",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fb99ab6-8e0c-48b6-b109-d0bc6c0f4b66",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "vinhabc@gmail.com"
+    }, {
+      "id": "fcd5ed04-2d00-4db0-b88c-c19f23adfd21",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "vinh"
+    }, {
+      "id": "b1f89387-3173-4352-99bc-4a95e420575c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa84974-bd4c-41de-a11b-32135a1a317d",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Incorrect password.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "69e9476b-153a-46db-90a6-2bb59ca2f378",
+    "name": "Filter Laptop",
+    "commands": [{
+      "id": "cad131b8-06ba-4d40-a638-ebfae187e96e",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3141db8-844f-42d3-a17e-fb3e8c1582a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b12bd653-f5be-4dc6-88db-2e16b8f18039",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.row:nth-child(1) > select", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d445b17d-6a4c-4abe-a88b-b1b980c2fee1",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Laptop"
+    }, {
+      "id": "5bb2bf3e-9304-49ba-a07d-fb197c926543",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Laptop Macbook"
+    }, {
+      "id": "501a8ce9-a50b-43ea-80b0-81bdcbfbebd1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Acer"
+    }]
+  }, {
+    "id": "123dd31e-0cb7-439d-ac0e-463a088e01aa",
+    "name": "Sort Price: High-Low",
+    "commands": [{
+      "id": "6e34e5f7-e0cc-48fb-8ba9-fc8dadbb17e9",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03e02fd2-d36a-4a7b-a549-685920a20d18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e38fd795-800c-4b08-8064-294731d2a927",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sort > select",
+      "targets": [
+        ["css=.sort > select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1ee6aa8-91d8-4efd-9f82-c49c20af46fa",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb01ceba-01ef-4522-8441-e8df0662e234",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sort > select",
+      "targets": [],
+      "value": "label=Price: Hight-Low"
+    }, {
+      "id": "53141da1-b426-4612-ada2-56797e51799d",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c5885b-1d7a-44da-ac95-564a3ba3b034",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Laptop Macbook"
+    }, {
+      "id": "03930340-a33c-497d-a88b-b15f1a2113a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }, {
+      "id": "974d0293-041a-4de8-804f-45a8d5196902",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(3) h2",
+      "targets": [
+        ["css=.product_card:nth-child(3) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Acer"
+    }, {
+      "id": "839e6657-3c70-4225-a36b-16b6217d2feb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(4) h2",
+      "targets": [
+        ["css=.product_card:nth-child(4) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[4]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Glass"
+    }, {
+      "id": "01d39fc5-d3f6-4275-b17b-a8a5de42b439",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(5) h2",
+      "targets": [
+        ["css=.product_card:nth-child(5) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[5]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[5]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Vest"
+    }, {
+      "id": "94e11dcd-e8f7-4362-a42a-1d7730a23772",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(6) h2",
+      "targets": [
+        ["css=.product_card:nth-child(6) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[6]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[6]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Cool"
+    }]
+  }, {
+    "id": "a7e0028a-e32e-4325-acae-af3e4c1e87fe",
+    "name": "Search",
+    "commands": [{
+      "id": "ab6690ab-2618-4690-8c75-66b55037b55a",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "685c0908-5b20-4e8a-b2ac-0b31bd985939",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4771dd93-f588-4727-9f63-129418aa0fc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93b82ee7-99d9-4dda-b6e6-8ba2bb286891",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='girl']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "girl"
+    }, {
+      "id": "df99e8af-998a-4bb6-af93-de1ae1244c6a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='girl']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2af788f9-d560-45e1-ba93-81d371266ee3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }]
+  }, {
+    "id": "e123b2af-57a7-41a5-a1e3-e561586e8d63",
+    "name": "Filter Woman",
+    "commands": [{
+      "id": "d9e1f084-4059-4635-9128-6de3d76e5793",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5789859-386a-4063-a052-74a68f39d7a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2c9bd16-2b7b-4a87-a5bc-0adece3334b4",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.row:nth-child(1) > select", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1c6d79f-81bb-40e8-a960-31e873edb0fd",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "883bb8c4-a987-4594-879f-175c9137a387",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Laptop"
+    }, {
+      "id": "3e1620f1-aeb5-4d5f-89c3-894dcc0d6ebb",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "044c4b32-4a8a-433f-8e64-721e52759081",
+      "comment": "",
+      "command": "assertText",
+      "target": "//div[@class=\"product_card\"][1]//h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }]
+  }, {
+    "id": "9118c874-64de-47b8-8ecc-f638bb8384c8",
+    "name": "Filter Men",
+    "commands": [{
+      "id": "2f5be255-8cf2-4d13-a1ad-64b84ebeb886",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03615c8a-a494-42e8-9411-d121366fdb76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a695109-5e1e-4c74-b797-9dee6826317b",
+      "comment": "",
+      "command": "click",
+      "target": "name=category",
+      "targets": [
+        ["name=category", "name"],
+        ["css=.row:nth-child(1) > select", "css:finder"],
+        ["xpath=//select[@name='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0030faf1-f58f-49e0-9e2d-7474873fd5be",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "288af8f7-4166-423e-bd29-03d26377a84c",
+      "comment": "",
+      "command": "select",
+      "target": "name=category",
+      "targets": [],
+      "value": "label=Men"
+    }, {
+      "id": "2c24ef2a-ab55-403a-b1f3-2711ebb5c9ed",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3758844e-ab15-4324-ad91-e87e9e35c3e1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Glass"
+    }, {
+      "id": "8a340c14-fde7-4282-9f6d-5228bd4c687d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Vest"
+    }, {
+      "id": "b5d064f0-ec7a-4aec-b048-830c60e901d3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(3) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Cool"
+    }]
+  }, {
+    "id": "c2496211-38e7-42ed-ae2c-9a1d5a6b8c2e",
+    "name": "Sort Price: Low-High",
+    "commands": [{
+      "id": "2ea3e1f0-fcfb-44fa-ba53-463fec314d80",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54aa989b-3afd-4043-a759-1e2c6c1a137e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dacc8e7-af25-4280-b569-2b2db0fceef7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sort > select",
+      "targets": [
+        ["css=.sort > select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfa583fb-f58f-40c6-9be7-cfd0b1c99d1e",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4767131d-3142-4909-bb6b-8f964fcb12a2",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sort > select",
+      "targets": [],
+      "value": "label=Price: Low-Hight"
+    }, {
+      "id": "f3986481-c3e5-425e-87f7-c6f66ba7384b",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fff50d4b-b473-4cfa-a449-2ce77119db9a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Cool"
+    }, {
+      "id": "c3f5db91-ccf0-452a-9435-d1e5f5e1e4dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Vest"
+    }, {
+      "id": "617c3934-2a60-4d06-8ef2-7f30976d5fac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(3) h2",
+      "targets": [
+        ["css=.product_card:nth-child(3) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Glass"
+    }, {
+      "id": "3db0f011-d5b9-4cfa-b71f-ec373f7c332e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(4) h2",
+      "targets": [
+        ["css=.product_card:nth-child(4) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[4]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Acer"
+    }, {
+      "id": "6c53bd9e-434b-4d0c-8d87-d54a7ab839b7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(5) h2",
+      "targets": [
+        ["css=.product_card:nth-child(5) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[5]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[5]/div/h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }, {
+      "id": "f27f0023-4e2a-4e14-8c83-24ef45445ac6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(6) h2",
+      "targets": [
+        ["css=.product_card:nth-child(6) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[6]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[6]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Macbook"
+    }]
+  }, {
+    "id": "8440db1e-c237-4c31-a568-9bc9c36ceff8",
+    "name": "Sort Newest",
+    "commands": [{
+      "id": "cf24b08e-c225-4fa6-849c-77906278ebc3",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2885472c-7e96-4ace-91c9-e1aff2462312",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80d9d256-8ba7-4fc4-b85b-72acc906f824",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sort > select",
+      "targets": [
+        ["css=.sort > select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23a3c62-c338-4db9-98c6-2027a907722c",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6e156a4-9aed-4eb8-9cd8-042dadb5e0b8",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sort > select",
+      "targets": [],
+      "value": "label=Newest"
+    }, {
+      "id": "ffd256b2-fdfa-4dc1-8c7a-855d1a0ab6e4",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e316973f-6a34-415d-bd92-4eea9d546e82",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(5) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[5]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[5]/div/h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }, {
+      "id": "823b0a12-5347-43cc-b7f2-42639b4e0110",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(3) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Glass"
+    }, {
+      "id": "7f42e227-802d-4d73-85a0-aed96c373b0f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(3) h2",
+      "targets": [
+        ["css=.product_card:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Vest"
+    }, {
+      "id": "6d66858b-1ac2-4f6c-b3e6-13ddec0beccb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(4) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Cool"
+    }, {
+      "id": "b08d6988-1557-4d31-beb8-573655af8c09",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(5) h2",
+      "targets": [
+        ["css=.product_card:nth-child(6) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[6]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[6]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Macbook"
+    }, {
+      "id": "41fbbeb9-4a74-4ccb-8a65-59e1e48d6c7c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(6) h2",
+      "targets": [
+        ["css=.product_card:nth-child(4) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[4]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Acer"
+    }]
+  }, {
+    "id": "e9d995e4-1147-46d2-8710-2a0aece9f127",
+    "name": "Sort Oldest",
+    "commands": [{
+      "id": "bc4d0836-0bc3-470c-8d2e-77ecfd420a7c",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bf93ba6-39ae-4755-8ddf-89b7b4ac5a9c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "386c7459-b02a-4ed6-9f8a-9dc53274522a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sort > select",
+      "targets": [
+        ["css=.sort > select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f95568f3-b92e-4a0b-b0db-7fe9209477c9",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33fb5f65-d8ce-4966-8524-8caa6ddd1cfe",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sort > select",
+      "targets": [],
+      "value": "label=Oldest"
+    }, {
+      "id": "c1fa52ee-e373-4511-9b42-fc968874c035",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69d874c0-d604-4a17-90ee-654dd7c4ccc7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(4) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[4]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Acer"
+    }, {
+      "id": "66185555-ce60-4468-bc25-e12338b5393f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(6) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[6]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[6]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Macbook"
+    }, {
+      "id": "d3f72330-feb0-470c-ad84-bb13cf13da95",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(3) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Cool"
+    }, {
+      "id": "d04e638c-dc86-4616-951d-80bfb2483353",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(4) h2",
+      "targets": [
+        ["css=.product_card:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Vest"
+    }, {
+      "id": "ef9ef38f-ada7-4f49-9a0c-973414ed3577",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(5) h2",
+      "targets": [
+        ["css=.product_card:nth-child(3) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Glass"
+    }, {
+      "id": "206c7cb5-a6ba-4f29-ba9d-e8af6a1372dc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(6) h2",
+      "targets": [
+        ["css=.product_card:nth-child(5) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[5]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[5]/div/h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }]
+  }, {
+    "id": "c27f8c19-4d80-41db-856c-641bef6afaec",
+    "name": "Sort Best sales",
+    "commands": [{
+      "id": "18ff0e36-385c-4916-b7c0-266e6f27b738",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f6e5471-cd95-4fb7-bc19-f5a4797295df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae4768f2-8acf-4905-ac96-fd7d801a6ca2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sort > select",
+      "targets": [
+        ["css=.sort > select", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2198534a-6490-41d7-8615-9247f724e948",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10f66f58-adbb-4884-b012-9d75a5a67abe",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sort > select",
+      "targets": [],
+      "value": "label=Best sales"
+    }, {
+      "id": "7aa2f9b2-4675-4cc9-8591-d0e611c2cdbe",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50ebb9b1-3855-47c0-94be-325ad114d126",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(1) h2",
+      "targets": [
+        ["css=.product_card:nth-child(5) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[5]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[5]/div/h2", "xpath:position"]
+      ],
+      "value": "Red Girl"
+    }, {
+      "id": "98a5094d-69aa-4b20-a478-65d200ec8bad",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(2) h2",
+      "targets": [
+        ["css=.product_card:nth-child(1) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "Man Cool"
+    }, {
+      "id": "793f2a58-f0f3-4bc5-a027-51d88bd0c0ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(3) h2",
+      "targets": [
+        ["css=.product_card:nth-child(2) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[2]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Vest"
+    }, {
+      "id": "421125a5-dba9-4c5d-8364-1a40f360c821",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(4) h2",
+      "targets": [
+        ["css=.product_card:nth-child(3) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[3]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/div/h2", "xpath:position"]
+      ],
+      "value": "Man Glass"
+    }, {
+      "id": "25877b03-45ce-4f72-9cd6-b8de82a0c18b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(5) h2",
+      "targets": [
+        ["css=.product_card:nth-child(6) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[6]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[6]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Macbook"
+    }, {
+      "id": "d739be4b-ef4d-4213-b440-41103474b8e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product_card:nth-child(6) h2",
+      "targets": [
+        ["css=.product_card:nth-child(4) h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div[4]/div/h2", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h2", "xpath:position"]
+      ],
+      "value": "Laptop Acer"
+    }]
+  }, {
+    "id": "16a7d978-5bbb-4ec6-b364-4783d9e15ec2",
+    "name": "View-Buy Red Girl",
+    "commands": [{
+      "id": "39b24416-e72d-4387-bdcb-6318d92a2456",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fdc5c52-71d3-45f6-9175-df21fc46b524",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "457d6d92-7e23-41c0-9563-b93d9baee122",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22e88ed3-7227-4896-9230-0b55661ea50a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(1) #btn_view",
+      "targets": [
+        ["id=btn_view", "id"],
+        ["css=.product_card:nth-child(1) #btn_view", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//a[@id='btn_view']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/detail/5f790ffa029dbd2e18d40f59')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9dd3827-455a-4d4b-8445-e54e5136ff4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy Now')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f40ad83e-2bcd-465d-a190-91b4a8f1da44",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6a18406-5789-412c-b604-c7d786edc850",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "RED GIRL"
+    }, {
+      "id": "f2fcd646-5d3a-4213-8abc-2602cbec2f05",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4b84cddf-d784-4687-9eb1-830b34ea908b",
+    "name": "View-Buy Man Glass",
+    "commands": [{
+      "id": "dbc13b53-ad0a-4e5c-be27-af13b690fdbc",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1aa995f3-c788-420d-b33d-386e8c51e0b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1599fff7-f043-4ae6-8c9f-a4ecd5557f75",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17423fca-2afb-404c-95bd-54cf33811344",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(2) #btn_view",
+      "targets": [
+        ["id=btn_view", "id"],
+        ["css=.product_card:nth-child(1) #btn_view", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//a[@id='btn_view']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/detail/5f790ffa029dbd2e18d40f59')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a11b3a1-04e9-4f0e-a662-d394a64d080d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy Now')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09d3f105-d076-40d7-80c7-8a9f0f58d3a5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fd1fbba-fd5d-46fa-97c6-46165c14af18",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MAN GLASS"
+    }, {
+      "id": "a477137f-8d49-41bd-97f5-bc544933df49",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0ef15d1a-87a7-4135-8647-86a79471972b",
+    "name": "View-Buy Man Vest",
+    "commands": [{
+      "id": "6c2fd0c5-0df6-4a84-a619-1e9a30fe9ca4",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbfd20c1-4e37-4431-8932-857575afef02",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ea3e982-0824-4a7b-a8dc-a841f24479bd",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8da71741-5ba0-4053-a2a1-0f1e6c49fa91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(3) #btn_view",
+      "targets": [
+        ["id=btn_view", "id"],
+        ["css=.product_card:nth-child(1) #btn_view", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//a[@id='btn_view']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/detail/5f790ffa029dbd2e18d40f59')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4703750-0d8e-41e4-98ce-a765bfeb89c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy Now')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "466c52d2-628d-427c-8339-bddc6ecd67fc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12c12388-4ef0-46c2-b61a-b8ea0dd37832",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MAN VEST"
+    }, {
+      "id": "75183c58-8afe-4a52-b230-e743700339b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0219fe0d-8a8b-46c5-b854-54a1a24758e4",
+    "name": "View-Buy Man Cool",
+    "commands": [{
+      "id": "e3538e6b-3f57-40c4-bd64-a5363ae6fcbc",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53d0deb3-87ad-44e4-9198-4dc432b4f1c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a4714d4-83a1-4671-97c9-13683f32e20e",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37fc13a8-0c04-4f77-858b-32189b816a01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(4) #btn_view",
+      "targets": [
+        ["id=btn_view", "id"],
+        ["css=.product_card:nth-child(1) #btn_view", "css:finder"],
+        ["xpath=//a[contains(text(),'View')]", "xpath:link"],
+        ["xpath=//a[@id='btn_view']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/detail/5f790ffa029dbd2e18d40f59')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "059abbdd-6f56-4959-98f2-829901de7400",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart",
+      "targets": [
+        ["css=.cart", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy Now')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c80ffb17-3e4a-4532-9f5e-c2ab9e01a08d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13517425-c4df-4f63-b971-99b6142575a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MAN COOL"
+    }, {
+      "id": "a957c90d-9fb8-4dcb-93fa-3737a68f88c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f5dde161-77e8-432a-ac0c-4bed84e3dec4",
+    "name": "Buy RedGirl",
+    "commands": [{
+      "id": "4dac8a29-3725-4c43-a146-c7573cae5414",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87aea00e-74a5-44ed-a8bb-8f7d1ff5a103",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9fce8fc-4403-4c58-852f-afea0630bcb1",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c863cbf-e7f5-47e9-ad8e-36290d69c18d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(6) #btn_buy",
+      "targets": [
+        ["id=btn_buy", "id"],
+        ["css=.product_card:nth-child(1) #btn_buy", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy')]", "xpath:link"],
+        ["xpath=//a[@id='btn_buy']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#!')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f649c054-c13f-4c6f-b594-d8d1c7ebe9a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div[3]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe22e6d-cd8c-480f-954f-a88a2bcc749c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "LAPTOP ACER"
+    }, {
+      "id": "dae40557-d17a-4b74-a13b-4d29e8e03a17",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ae557549-a2a1-4984-b8d7-1c73d908cd6a",
+    "name": "Buy Man Glass",
+    "commands": [{
+      "id": "060238af-45bb-4463-bc8a-e85756684098",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9d1a193-183c-48d7-a689-370aad588bd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c5d8681-8c40-4158-b5a6-159d5de88549",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dec6db78-090a-45a2-a103-d56da1c087b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(2) #btn_buy",
+      "targets": [
+        ["id=btn_buy", "id"],
+        ["css=.product_card:nth-child(1) #btn_buy", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy')]", "xpath:link"],
+        ["xpath=//a[@id='btn_buy']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#!')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4477b89e-f3d8-493a-84fd-04dd7a7a66c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div[3]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfa4be7e-bb13-44ed-bdd3-35943799a55d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "MAN GLASS"
+    }, {
+      "id": "d4fa6ffd-c478-4016-8d1b-e13cb3b764f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4e0cb8ab-5b4f-4ca1-9839-6942c880f55e",
+    "name": "Buy Laptop Acer",
+    "commands": [{
+      "id": "79da5ff5-f494-4db7-8a6a-e33bd7a81d32",
+      "comment": "",
+      "command": "open",
+      "target": "https://devat-ecommerce.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4989b1d2-a4ce-4cda-a0c9-8b8abb7877a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfeaf0f2-bcca-45a1-b5b8-232f929f1759",
+      "comment": "",
+      "command": "run",
+      "target": "Login valid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "473d5eda-c0a8-4d90-a698-25a107c79620",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_card:nth-child(1) #btn_buy",
+      "targets": [
+        ["id=btn_buy", "id"],
+        ["css=.product_card:nth-child(1) #btn_buy", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy')]", "xpath:link"],
+        ["xpath=//a[@id='btn_buy']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/#!')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55edc752-f387-4f5f-93fd-3ac1bfe47f65",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//div[@id='root']/div/header/div[3]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62bb9be3-9f3f-4e47-9dc2-1699c323ce39",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "RED GIRL"
+    }, {
+      "id": "b6317bb9-ae2d-410a-9dff-efd1fd6cf2e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) > a",
+      "targets": [
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/header/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[4]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2f483169-4eca-4cb0-b73c-32eea6f3eacf",
+    "name": "Login-Register",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8e8f496e-1c70-4236-a9d6-29866a95ca49", "027c213c-9a22-458a-89fd-6e837792b5c2", "df744d79-aecf-4d1f-a58f-f1781bad67be", "2931405b-184a-4213-8acd-cbaaa3d754be", "c809569d-2004-4933-a29b-67a3e91482aa", "9c87ddc9-f790-4d2c-85d9-02b58d210f25"]
+  }, {
+    "id": "5e97ebb1-9073-4540-b1c7-0d263fa2920d",
+    "name": "Filter-Sort-Search",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["69e9476b-153a-46db-90a6-2bb59ca2f378", "a7e0028a-e32e-4325-acae-af3e4c1e87fe", "123dd31e-0cb7-439d-ac0e-463a088e01aa", "9118c874-64de-47b8-8ecc-f638bb8384c8", "e123b2af-57a7-41a5-a1e3-e561586e8d63", "c2496211-38e7-42ed-ae2c-9a1d5a6b8c2e", "e9d995e4-1147-46d2-8710-2a0aece9f127", "8440db1e-c237-4c31-a568-9bc9c36ceff8", "c27f8c19-4d80-41db-856c-641bef6afaec"]
+  }, {
+    "id": "60452a8b-bfbb-4f26-9ac5-b344a6496320",
+    "name": "Buy",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4e0cb8ab-5b4f-4ca1-9839-6942c880f55e", "ae557549-a2a1-4984-b8d7-1c73d908cd6a", "f5dde161-77e8-432a-ac0c-4bed84e3dec4", "0219fe0d-8a8b-46c5-b854-54a1a24758e4", "4b84cddf-d784-4687-9eb1-830b34ea908b", "0ef15d1a-87a7-4135-8647-86a79471972b", "16a7d978-5bbb-4ec6-b364-4783d9e15ec2"]
+  }],
+  "urls": ["https://devat-ecommerce.herokuapp.com/"],
+  "plugins": []
+}
